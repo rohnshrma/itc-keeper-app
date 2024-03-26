@@ -9,8 +9,8 @@ const Task = (props) => {
   return (
     <div className='task'>
         <h2>{props.name}</h2>
-        <h3>{props.description}</h3>
-        <button onClick={clickHandler} >Delete</button>
+        <p>{props.description}</p>
+        <button onClick={clickHandler} >✖</button>
     </div>
   )
 }

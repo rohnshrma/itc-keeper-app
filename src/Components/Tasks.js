@@ -8,7 +8,7 @@ const Tasks = () => {
     const ctx = useContext(TasksContext)
 
   return (
-    <div>
+    <div className='tasks'>
         {ctx.tasks.map((task,index)=> <Task name={task.name} description={task.description} id={index} key={index} onDelete={ctx.deleteTaskHandler} /> )}
     </div>
   )
